@@ -11,7 +11,7 @@ Run the program online on JSFiddle here: https://jsfiddle.net/gamblePants/unh0ow
 
 - Alternatively click on the "release" tab above
 - Download the chooseYourOwn.zip folder and extract to your computer
-- Double-click on the chooseYourOwn.html file to run in your browser
+- Double-click the chooseYourOwn.html file to run in your browser
 - Open chooseYourOwn.html and scenes.js files with a text editor to view the code
 
 ## Program structure

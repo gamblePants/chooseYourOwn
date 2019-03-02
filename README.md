@@ -16,6 +16,8 @@ Run the program online on JSFiddle here: https://jsfiddle.net/gamblePants/unh0ow
 
 ## Program structure
 
+The scenes.js file is a script creating an array of objects (scenes). Each one of these scenes links to the other by the "name" property. The html file contains basic html labels and buttons for displaying the information. It also holds the displayStory(), moveCharacter() and playAgain() functions.
+
 ## Code snippets
 
 ## Credits

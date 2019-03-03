@@ -30,3 +30,5 @@ if (choice == 1) {
 ```
 
 ## Credits
+
+Special thanks to Amie McKenna for helping me edit the story.

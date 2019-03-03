@@ -20,4 +20,13 @@ The scenes.js file is a script creating an array of objects (scenes). Each one o
 
 ## Code snippets
 
+the html buttons call the moveCharacter(choice) funtion. This function updates the current scene using the filter method, which looks through the scenes array for the correct scene. 
+
+```C#
+if (choice == 1) {
+            scene = scenes.filter(function(item) {
+              return item.name === scene.result1;
+            })[0] || null;
+```
+
 ## Credits

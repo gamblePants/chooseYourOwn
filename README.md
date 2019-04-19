@@ -4,7 +4,7 @@ A simple choose your own adventure game. Click on the buttons to choose which pa
 ![chooseYour.PNG](https://gamblepants.github.io/img/chooseYour.PNG)
 
 ## Purpose
-As a game for people to play. Also a way for me to improve my JavaScript (and story-telling) skills. 
+Primary purpose is a game. But also made to help me with learning JavaScript and my story writing. 
 
 ## How to run program
 Run the program online on JSFiddle here: https://jsfiddle.net/gamblePants/unh0ow84/

@@ -9,7 +9,7 @@ Primary purpose is a game. But also made to help me with learning JavaScript and
 ## How to run program
 Run the program online on JSFiddle here: https://jsfiddle.net/gamblePants/unh0ow84/
 
-- Alternatively click on the "release" tab above
+- Alternatively go to the [Release](https://github.com/gamblePants/chooseYourOwn/releases) page
 - Download the chooseYourOwn.zip folder and extract to your computer
 - Double-click the chooseYourOwn.html file to run in your browser
 - Open chooseYourOwn.html and scenes.js files with a text editor to view the code

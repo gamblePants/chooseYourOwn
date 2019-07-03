@@ -1,4 +1,7 @@
-//  // creates array of scenes, each one linking to the other via the name property
+//  creates array of scenes, each one linking to the other via the name property
+
+
+
 
 var scenes= [{
 name: "INTRO",
@@ -37,33 +40,154 @@ result3:"",
 
 },
 {
+
 name:"test",
-description:"Unfortunately, today is your exams day and you must choose and exam...",   
-choice1:"",
-choice2:"",
-Choice3:"",
-result1:"",
-result2:"",
+description:"Unfortunately, today is your exams day and you must choose and exam...",
+choice1:"Definitley chemistry!",
+choice2:"I like Physics too!",
+choice3:"",
+result1:"chemistry",
+result2:"physics",
 result3:"",
+
+},
+
+{
+name:"chemistry",
+description:"How can we get more amount “good student” product?",
+choice1:"By giving more homework",
+choice2:"By giving more life lesson",
+choice3:"None of Above",
+result1:"more",
+result2:"ll",
+result3:"nb",
 },
 
 
 {
-name:"",
-description:"",
-choice1:"",
+name:"more",
+description:"Well you will not want more work when you can’t even understand the question. Homework quantity decreases and has more bad student reactant.",
+choice1:"Next",
 choice2:"",
-Choice3:"",
+choice3:"",
+result1:"end",
+result2:"",
+result3:"",
+},
+
+{
+name:"ll",
+description:"life lesson maybe is the intermediate for the good student process, but not the main factor to get more student product.",
+choice1:"Next",
+choice2:"",
+choice3:"",
+result1:"end",
+result2:"",
+result3:"",
+},
+
+{
+name:"nb",
+description:"You are correct! you really being a top student! Homework, life lesson, the explanation is not enough, one more thing is the teacher insist to teach the class with her heart. (Accomplishment: I AM REAL Ms.Chen :D)",
+choice1:"Next",
+choice2:"",
+choice3:"",
+result1:"end",
+result2:"",
+result3:"",
+},
+
+{
+name:"physics",
+description:"Water (liquid raindrop size) falls on the earth without the atmosphere, regardless of evaporation. What will happen? ( from physical point of view)",
+choice1:"I don’t know the answer ",
+choice2:"I know the answer, easy!",
+choice3:"",
+result1:"",
+result2:"answer",
+result3:"easy",
+},
+{
+name:"answer",
+description:"",
+choice1:"Next",
+choice2:"",
+choice3:"",
+result1:"end",
+result2:"",
+result3:"",
+
+
+},
+{
+name:"easy",
+description:"really? I don’t think so. I find out this from the website and share to you for fun:D",
+choice1:"Next",
+choice2:"",
+choice3:"",
+result1:"end",
+result2:"",
+result3:"",
+
+},
+{
+name:"end",
+description:"(No matter what choice you get, you shouldn’t regret. As a gift you can choose other choices and see the answer) After you take the test, you feel extremely easy and fall to sleep",
+choice1:"Play Again",
+choice2:"",
+choice3:"",
 result1:"",
 result2:"",
 result3:"",
+
+
 }
 
 
-
-
-
 ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

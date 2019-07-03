@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title> A gift for Ms.chen </title>
+    <meta name="author" content="Koan Stevenson - snowdroid@yahoo.ca">
+	<!-- with special thanks to Amie McKenna for helping me with my words -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="scenes.js">//this script creates an array of objects called scenes</script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Today you are a top student</h1>
+      </header>
+      <nav>
+      </nav>
+      <main>
+        <form>
+          <fieldset>
+            <p>
+              <label id="display">Text displayed here</label>
+              <br>
+              <br>
+            </p>
+            <p>
+              <button type="button" id="button1" onclick="moveCharacter(1)">choice 1</button>
+            </p>
+            <p>
+              <button type="button" id="button2" onclick="moveCharacter(2)">choice 2</button>
+            </p>
+            <p>
+              <button type="button" id="button3" onclick="moveCharacter(3)">choice 3</button>
+            </p>
+          </fieldset>
+        </form>
+      </main>
+      <footer></footer>
+
+      <script>
+
+        // sets story to INTRO scene and displays
+        var scene = scenes[0];
+        displayStory();
+        // updates the html label and buttons depending on which scene is showing
+        // also hides buttons if there are less than 3 choices
+        function displayStory() {
+          document.getElementById("display").innerHTML = scene.description;
+          document.getElementById("button1").innerHTML = scene.choice1;
+          if (scene.choice2 == "") {
+            document.getElementById("button2").style.visibility = "hidden";
+          } else {
+          document.getElementById("button2").style.visibility = "visible";
+            document.getElementById("button2").innerHTML = scene.choice2;
+          }
+          if (scene.choice3 == "") {
+            document.getElementById("button3").style.visibility = "hidden";
+          } else {
+          	document.getElementById("button3").style.visibility = "visible";
+            document.getElementById("button3").innerHTML = scene.choice3;
+          }
+		  // changes onclick function if character dies
+          if (scene.choice1 == "Play Again") {
+            document.getElementById("button1").onclick = playAgain;
+          }
+		  // hides button1 if player wins the game
+		  if (scene.choice1 == ""){
+			document.getElementById("button1").style.visibility = "hidden";
+			}
+        }
+        // "moves" character by changing the scene
+        // the scene is chosen by using the filter function on the scenes array
+        // (by matching the name to result1, result2 or result3)
+        function moveCharacter(choice) {
+          if (choice == 1) {
+            scene = scenes.filter(function(item) {
+              return item.name === scene.result1;
+            })[0] || null;
+          } else if (choice == 2) {
+            scene = scenes.filter(function(item) {
+              return item.name === scene.result2;
+            })[0] || null;
+          } else {
+            scene = scenes.filter(function(item) {
+              return item.name === scene.result3;
+            })[0] || null;
+          }
+          displayStory();
+        }
+        function playAgain() {
+        location.reload();
+        }
+      </script>
+
+    </div>
+  </body>
+
+</html>

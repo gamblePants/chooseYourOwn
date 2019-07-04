@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title> Choose Your Own Death by Koan Stevenson </title>
+    <title> A gift for Ms.chen </title>
     <meta name="author" content="Koan Stevenson - snowdroid@yahoo.ca">
 	<!-- with special thanks to Amie McKenna for helping me with my words -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
   <body>
     <div id="wrapper">
       <header>
-        <h1>Choose your own Death</h1>
+        <h1>Today you are a top student</h1>
       </header>
       <nav>
       </nav>
@@ -35,23 +35,24 @@
             <p>
               <button type="button" id="button3" onclick="moveCharacter(3)">choice 3</button>
             </p>
+            <form>
+  <input type="button" value="Go Back" onclick="history.back()">
+        </form>
           </fieldset>
         </form>
       </main>
       <footer></footer>
 
-      <script>       
-        
+      <script>
+
         // sets story to INTRO scene and displays
         var scene = scenes[0];
         displayStory();
-
         // updates the html label and buttons depending on which scene is showing
         // also hides buttons if there are less than 3 choices
         function displayStory() {
           document.getElementById("display").innerHTML = scene.description;
           document.getElementById("button1").innerHTML = scene.choice1;
-
           if (scene.choice2 == "") {
             document.getElementById("button2").style.visibility = "hidden";
           } else {
@@ -65,7 +66,7 @@
             document.getElementById("button3").innerHTML = scene.choice3;
           }
 		  // changes onclick function if character dies
-          if (scene.choice1 == "Play Again") {          	
+          if (scene.choice1 == "Play Again") {
             document.getElementById("button1").onclick = playAgain;
           }
 		  // hides button1 if player wins the game
@@ -73,7 +74,6 @@
 			document.getElementById("button1").style.visibility = "hidden";
 			}
         }
-
         // "moves" character by changing the scene
         // the scene is chosen by using the filter function on the scenes array
         // (by matching the name to result1, result2 or result3)
@@ -91,14 +91,11 @@
               return item.name === scene.result3;
             })[0] || null;
           }
-
           displayStory();
         }
-
-        function playAgain() {        
+        function playAgain() {
         location.reload();
         }
-
       </script>
 
     </div>

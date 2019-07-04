@@ -40,7 +40,7 @@ var scenes = [{
   },
   {
 	name: "FALLDOWN",
-	description: "Blindly climbing down, the rocks suddenly give way underneath! You're sent sprawling out in to the nothing below.<br ><br >Your head cracks on the rock and you fall in a heap. A boulder rolls on to your head. As your skull caves in, you feel your eyeballs squish and you think \"Huh, didn't see that coming.\"",
+	description: "Even though you are label as lazy student, but you can change that by yourself at anytime\"",
 	choice1: "Play Again",
 	choice2: "",
 	choice3: "",
@@ -140,7 +140,7 @@ var scenes = [{
   },
   {
 	name: "HUMP",
-	description: "You have wild horse sex! With bestial enthusiasm you and the herd turn the afternoon in to a frenzy of love far too graphic for this game. Afterwards you lie in the flowers, discussing philosophy.<br ><br >It feels like you've forgotten something. Distracted, you get up and wander away from your horse friends. You find yourself at the entrance of a cavern. It smells familiar and smoky. Wandering in you see a light at the far end and find a guttering torch set in the rock wall. There are three doors in front of you.",
+	description: "You have wild horse ! With bestial enthusiasm you and the herd turn the afternoon in to a frenzy of love far too graphic for this game. Afterwards you lie in the flowers, discussing philosophy.<br ><br >It feels like you've forgotten something. Distracted, you get up and wander away from your horse friends. You find yourself at the entrance of a cavern. It smells familiar and smoky. Wandering in you see a light at the far end and find a guttering torch set in the rock wall. There are three doors in front of you.",
 	choice1: "Take the left door",
 	choice2: "Take the middle door",
 	choice3: "Take the right door",

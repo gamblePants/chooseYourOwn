@@ -103,9 +103,9 @@ description:"Water (liquid raindrop size) falls on the earth without the atmosph
 choice1:"I don’t know the answer ",
 choice2:"I know the answer, easy!",
 choice3:"",
-result1:"",
-result2:"answer",
-result3:"easy",
+result1:"answer",
+result2:"easy",
+result3:"",
 },
 {
 name:"answer",

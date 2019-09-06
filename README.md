@@ -29,6 +29,3 @@ if (choice == 1) {
             })[0] || null;
 ```
 
-## Credits
-
-Special thanks to Amie McKenna for helping me with my words.
